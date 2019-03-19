@@ -133,5 +133,6 @@ public class WebsocketServerHandler extends SimpleChannelInboundHandler<Object> 
     private void sendMessage(ChannelHandlerContext toCtx, IMMessage msgReq) {
         toCtx.channel().write(
                 new TextWebSocketFrame(JSON.toJSONString(msgReq)));
+        toCtx.channel().flush();
     }
 }
