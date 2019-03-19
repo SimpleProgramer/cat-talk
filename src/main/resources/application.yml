@@ -50,3 +50,11 @@ spring:
         login-username: admin
         # 登录密码
         login-password: nothing123
+mybatis:
+  type-aliases-package: cn.cat.talk.core.entity #设置包别名
+  configuration:
+    map-underscore-to-camel-case: true #开启字段的驼峰映射
+mapper:
+  mappers: com.stip.mybatis.generator.plugin.GenericMapper #扫描的是统用的mapper(repository)
+  not-empty: false
+  identity: MYSQL
