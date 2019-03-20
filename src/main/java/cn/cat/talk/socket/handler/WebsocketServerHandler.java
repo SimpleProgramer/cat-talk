@@ -1,9 +1,10 @@
-package cn.cat.talk.socket;
+package cn.cat.talk.socket.handler;
 
-import cn.cat.talk.cache.OnlineCache;
 import cn.cat.talk.commons.enums.ErrorCode;
 import cn.cat.talk.commons.exceptions.BusinessExceptionFactory;
-import cn.cat.talk.core.pojo.IMMessage;
+import cn.cat.talk.core.pojo.MessageHandlerPojo;
+import cn.cat.talk.core.strategy.CatHandlerContext;
+import cn.cat.talk.protocol.IMMessage;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.buffer.ByteBuf;
@@ -106,33 +107,12 @@ public class WebsocketServerHandler extends SimpleChannelInboundHandler<Object> 
         //收到消息 增加到消息记录
         IMMessage msgReq = null;
         try {
-            String s = ((TextWebSocketFrame) msg).text();
-            msgReq = JSONObject.parseObject(s, IMMessage.class);
-            System.out.println("收到消息:" + msgReq.getBody());
-            //收到消息后 写入消息记录表，并且根据
-            if (msgReq.getType() == 1) {
-                OnlineCache.set(msgReq.getFromUserId(),ctx);
-            }
-            if (msgReq.getType() == 2) {
-                ChannelHandlerContext toCtx = OnlineCache.get(msgReq.getToUserId());
-                sendMessage(toCtx,msgReq);
-                sendMessage(ctx,msgReq);
-
-            }
-
-
+            msgReq = JSONObject.parseObject(((TextWebSocketFrame) msg).text(), IMMessage.class);
+            new CatHandlerContext(new MessageHandlerPojo(msgReq,ctx,handshaker)).strategy();
         } catch (Exception e) {
 //            log.info("消息解析错误:[{}]   为了安全着想，该链路关闭",((TextWebSocketFrame) msg).text());
             handshaker.close(ctx.channel(), ((CloseWebSocketFrame) msg).retain());
             return;
         }
-
-
-    }
-
-    private void sendMessage(ChannelHandlerContext toCtx, IMMessage msgReq) {
-        toCtx.channel().write(
-                new TextWebSocketFrame(JSON.toJSONString(msgReq)));
-        toCtx.channel().flush();
     }
 }

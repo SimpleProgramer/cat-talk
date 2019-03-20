@@ -21,6 +21,10 @@ public final class OnlineCache {
         caches.remove(key);
     }
 
+    public static boolean contains(Long key) {
+        return caches.containsKey(key);
+    }
+
     public static ChannelHandlerContext removeAndGet(Long key) {
         ChannelHandlerContext ctx = caches.get(key);
         caches.remove(key);

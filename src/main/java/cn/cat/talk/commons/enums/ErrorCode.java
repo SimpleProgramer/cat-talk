@@ -17,10 +17,15 @@ public enum ErrorCode {
     EMPLOYEE_APPLET_LABEL_ERROR("400","添加员工标签失败"),
     APPLICATION_ERROR("400","应用错误"),
     PARAM_ERROR("500","参数格式错误"),
-    LOGIN_ERROR_CODE("404","登录过期,请重新登录"),
+
+
+    LOGIN_ERROR_CODE("404","登录失败，用户不存在"),
+    PWD_ERROR("403","密码错误"),
+
     EXPORT_ERROR("500", "excel导出失败"),
     CHECKSIGNFAIL("500","验签失败"),
     SIGN_NOT_FOUND("500","请签名后请求"),
+    NULL_SHAKER("500","handlershaker is null"),
     FEGIN_ERROR_CODE("500","服务调用异常");
 
 

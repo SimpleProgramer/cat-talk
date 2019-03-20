@@ -1,6 +1,7 @@
 package cn.cat.talk.socket;
 
 import cn.cat.talk.core.abs.Closeable;
+import cn.cat.talk.socket.handler.WebsocketServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
