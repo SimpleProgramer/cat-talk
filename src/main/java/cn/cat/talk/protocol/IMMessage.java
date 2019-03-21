@@ -14,7 +14,7 @@ public class IMMessage {
     private String body;
     private int code;
     private int type;
-    private Long lasTimestamp;
+    private Long timestamp;
     public void buildResp(int code,String body) {
         this.code = code;
         this.body = body;

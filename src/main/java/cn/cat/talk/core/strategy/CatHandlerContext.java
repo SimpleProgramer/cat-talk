@@ -24,10 +24,10 @@ public class CatHandlerContext {
                 //上线
                 handler = SpringContextHolder.getBean("onlineCatHandler");
                 break;
-            case 2:
+            case 2://点对点
                 handler = SpringContextHolder.getBean("talkCatHandler");
                 break;
-            case 3:
+            case 3://加好友
                 handler = SpringContextHolder.getBean("friendshipCatHandler");
                 break;
             default:

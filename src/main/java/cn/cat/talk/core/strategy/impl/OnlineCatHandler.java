@@ -28,10 +28,13 @@ public class OnlineCatHandler implements CatHandler {
     @Override
     public void handler(MessageHandlerPojo msg) {
         if (CheckParam.isNull(msg)) {
+            ContextHandler.closeChannel(msg);
             return;
         }
         if (OnlineCache.contains(msg.getMsg().getAccounts()[0])) {
             log.info("该用户已登陆");
+            msg.getMsg().buildResp(Integer.parseInt(ErrorCode.SUCCESS.getCode()),ErrorCode.SUCCESS.getMessage());
+            ContextHandler.sendMessage(msg);
             return;
         }
         User login = userDao.findByAccount(msg.getMsg().getAccounts()[0]);
@@ -45,6 +48,7 @@ public class OnlineCatHandler implements CatHandler {
             errorCode = ErrorCode.SUCCESS;
             flag = true;
         }
+        msg.getMsg().buildResp(Integer.parseInt(errorCode.getCode()),errorCode.getMessage());
         ContextHandler.sendMessage(msg);
         if (flag) {
             OnlineCache.set(msg.getMsg().getAccounts()[0], msg.getCtx());
