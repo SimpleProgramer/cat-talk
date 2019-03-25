@@ -1,11 +1,14 @@
 
 spring:
+  data:
+    mongodb:
+      uri: mongodb://chatUser:chatPass@112.74.38.212:27017/chat
   application:
     name: cat-talk-application
   datasource:
-      url: jdbc:mysql://47.106.90.231:3306/cat_talk?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      url: jdbc:mysql://119.28.176.207:3306/cat_talk?useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
-      password: nothing123
+      password: 123456
       driver-class-name: com.mysql.jdbc.Driver
       platform: mysql
       type: com.alibaba.druid.pool.DruidDataSource
