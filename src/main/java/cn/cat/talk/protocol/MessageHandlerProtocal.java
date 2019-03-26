@@ -1,11 +1,14 @@
-package cn.cat.talk.core.pojo;
+package cn.cat.talk.protocol;
 
+import cn.cat.talk.core.pojo.resp.ChatResp;
 import cn.cat.talk.protocol.IMMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.websocketx.WebSocketServerHandshaker;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 /**
  * @author wangzun
@@ -15,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MessageHandlerPojo {
+public class MessageHandlerProtocal {
     private IMMessage msg;
     private ChannelHandlerContext ctx;
     private WebSocketServerHandshaker handshaker;

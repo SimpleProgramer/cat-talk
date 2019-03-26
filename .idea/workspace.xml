@@ -2,30 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce924c75-5d59-4f92-bbf9-da3de6e3ea52" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/api/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/api/CatChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/beans/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/beans/SystemConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/ApiFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/MessageCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/exceptions/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/redis/RedisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/utils/MDCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/utils/NetworkUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/dao/TalkLogDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/entity/TalkLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/TalkLogMao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/impl/TalkLogMaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/resp/ChatResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/IMEnums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/PreTalkCatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/BaseIM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/ChatProtocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageJSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/IMState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/LoginState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/SendContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/SendState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cat-talk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cat-talk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cat/talk/core/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cat/talk/core/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/cat/talk/core/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/cat/talk/core/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/TalkLogMao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/TalkLogMao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/impl/TalkLogMaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/impl/TalkLogMaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/MessageHandlerPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageHandlerProtocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/resp/ChatResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/resp/ChatResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandlerContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandlerContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/OnlineCatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/OnlineCatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/IMMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/IMMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/ContextHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/ContextHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/WebsocketServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/WebsocketServerHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,41 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CatTalkApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/CatTalkApplication.java">
+      <file leaf-file-name="PreTalkCatHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/PreTalkCatHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/ApiFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2945">
-              <caret line="95" column="55" selection-start-line="95" selection-start-column="55" selection-end-line="95" selection-end-column="55" />
+            <state relative-caret-position="961">
+              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -80,8 +47,8 @@
       <file leaf-file-name="TalkLogMao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/TalkLogMao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="199">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TalkLogMaoImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TalkLogMaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/impl/TalkLogMaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            <state relative-caret-position="298">
+              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,34 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/SwaggerConfig.java">
+      <file leaf-file-name="ChatResp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/resp/ChatResp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="961">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CatChatController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/api/CatChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="29">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,14 +80,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TalkLog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/entity/TalkLog.java">
+      <file leaf-file-name="IMMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/IMMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="87">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseIM.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/BaseIM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/IMState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageJSON.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageJSON.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="217">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoTemplate.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.18.RELEASE/spring-data-mongodb-1.10.18.RELEASE.jar!/org/springframework/data/mongodb/core/MongoTemplate.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30411">
+              <caret line="1131" column="67" selection-start-line="1131" selection-start-column="67" selection-end-line="1131" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -197,15 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/Closeable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/CatTalkServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/exceptions/BusinessExceptionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/MsgReq.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/generator/CreatCode.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generator.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/generator.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/DruidConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/context/CatHandlerContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/state/State.java" />
@@ -214,16 +202,10 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/cache/OnlineCache.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/WebsocketServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/WebsocketServerHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/MessageHandlerPojo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/ContextHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/ErrorCode.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/OnlineCatHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandlerContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/IMMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/exception/BusinessException.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/exception/ApiException.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/utils/MDCUtils.java" />
@@ -233,14 +215,36 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/dao/TalkLogDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/redis/RedisRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/TalkLogMao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/resp/ChatResp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/impl/TalkLogMaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/entity/TalkLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/CatTalkApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/TalkCatHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandlerContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/TalkLogMao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/WebsocketServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/factory/SendContextFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/builder/SendContextFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/builder/Builder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/builder/SendContextBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/MessageHandlerPojo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageHandlerProtocal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageJSON.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/ContextHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/SendState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/LoginState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/IMEnums.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/PreTalkCatHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/SendContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/OnlineCatHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/ChatProtocal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/IMState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/IMMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/BaseIM.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/resp/ChatResp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/impl/TalkLogMaoImpl.java" />
       </list>
     </option>
   </component>
@@ -288,8 +292,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -363,7 +368,7 @@
               <item name="cat" type="462c0819:PsiDirectoryNode" />
               <item name="talk" type="462c0819:PsiDirectoryNode" />
               <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
@@ -375,43 +380,6 @@
               <item name="cat" type="462c0819:PsiDirectoryNode" />
               <item name="talk" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat-talk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="talk" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat-talk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="talk" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cat-talk" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="cat" type="462c0819:PsiDirectoryNode" />
-              <item name="talk" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
@@ -434,9 +402,7 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="cat" type="462c0819:PsiDirectoryNode" />
               <item name="talk" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="resp" type="462c0819:PsiDirectoryNode" />
+              <item name="protocol" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
@@ -447,8 +413,7 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="cat" type="462c0819:PsiDirectoryNode" />
               <item name="talk" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
@@ -459,9 +424,20 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="cat" type="462c0819:PsiDirectoryNode" />
               <item name="talk" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cat-talk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cat" type="462c0819:PsiDirectoryNode" />
+              <item name="talk" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cat-talk" type="b2602c69:ProjectViewProjectNode" />
@@ -478,7 +454,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,7 +463,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="TalkLog.java&#9;FILE&#9;file:///Users/Yang/github-wz/cat-talk/src/main/java/cn/cat/talk/core/entity/TalkLog.java&#10;cn.cat.talk.core.dao&#9;PSI&#9;JAVA://cn.cat.talk.core.dao.UserDao&#10;BaseService&#9;PSI&#9;JAVA://com.stip.mybatis.generator.plugin.BaseService&#10;G*Mapper&#9;FILE&#9;jar:///Users/Yang/.m2/repository/com/github/514687572/STIP-generator/2.0.0/STIP-generator-2.0.0.jar!/com/stip/mybatis/generator/plugin/GenericMapper.class" />
+    <property name="SearchEverywhereHistoryKey" value="Online&#9;FILE&#9;file:///Users/Yang/github-wz/cat-talk/src/main/java/cn/cat/talk/core/strategy/impl/OnlineCatHandler.java&#10;TalkLog.java&#9;FILE&#9;file:///Users/Yang/github-wz/cat-talk/src/main/java/cn/cat/talk/core/entity/TalkLog.java&#10;cn.cat.talk.core.dao&#9;PSI&#9;JAVA://cn.cat.talk.core.dao.UserDao&#10;BaseService&#9;PSI&#9;JAVA://com.stip.mybatis.generator.plugin.BaseService&#10;G*Mapper&#9;FILE&#9;jar:///Users/Yang/.m2/repository/com/github/514687572/STIP-generator/2.0.0/STIP-generator-2.0.0.jar!/com/stip/mybatis/generator/plugin/GenericMapper.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553009757451" />
@@ -502,8 +477,8 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="cn.cat.talk.socket" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/exception" />
@@ -511,14 +486,14 @@
       <recent name="$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/exceptions" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.cat.talk.core.strategy.impl" />
       <recent name="cn.cat.talk.commons.config" />
       <recent name="cn.cat.talk.commons.redis" />
       <recent name="cn.cat.talk.commons.utils" />
       <recent name="cn.cat.talk.commons.enums" />
-      <recent name="cn.cat.talk.commons.beans" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.cat.talk.socket" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -599,15 +574,16 @@
       <workItem from="1553255128740" duration="1406000" />
       <workItem from="1553262664055" duration="3803000" />
       <workItem from="1553477964499" duration="10702000" />
-      <workItem from="1553521340369" duration="631000" />
+      <workItem from="1553521340369" duration="13826000" />
+      <workItem from="1553592886021" duration="3913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45242000" />
+    <option name="totallyTimeSpent" value="62350000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -620,9 +596,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.39775562" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.3628429" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32917705" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3287858" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
@@ -630,8 +606,8 @@
       <window_info anchor="bottom" id="Run" order="3" weight="0.32917705" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3478803" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15710723" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297568" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="5" />
@@ -649,25 +625,25 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info id="Image Layers" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32917705" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32917705" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32917705" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15710723" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32917705" />
+      <window_info active="true" anchor="bottom" id="Messages" order="0" visible="true" weight="0.32917705" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="BPMNPalette" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="right" id="Maven Projects" order="10" visible="true" weight="0.3297568" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.3297568" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info id="Web" order="6" side_tool="true" />
@@ -677,7 +653,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297568" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39775562" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,174 +664,30 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="(TextWebSocketFrame) msg).text()" language="JAVA" />
+        <watch expression="((TextWebSocketFrame) msg).text()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>((TextWebSocketFrame) msg).text()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(TextWebSocketFrame) msg).text()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$MAVEN_REPOSITORY$/com/github/514687572/STIP-generator/2.0.0/STIP-generator-2.0.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/514687572/STIP-generator/2.0.0/STIP-generator-2.0.0.jar!/com/stip/mybatis/generator/plugin/BaseService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/dao/UserDao.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/514687572/STIP-generator/2.0.0/STIP-generator-2.0.0.jar!/com/stip/mybatis/generator/plugin/GenericMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.10/druid-1.1.10.jar!/com/alibaba/druid/pool/DruidDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="90" column="38" selection-start-line="90" selection-start-column="38" selection-end-line="90" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/alibaba/druid-spring-boot-starter/1.1.10/druid-spring-boot-starter-1.1.10.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/DruidConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="165" column="13" selection-start-line="96" selection-start-column="8" selection-end-line="165" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/context/SpringContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/cache/OnlineCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerHandshaker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="140" column="40" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/ContextHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/ErrorCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/handler/stream/ChunkedWriteHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/CatTalkServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="37" column="87" selection-start-line="37" selection-start-column="87" selection-end-line="37" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/utils/CheckParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11904">
-          <caret line="412" column="1" selection-start-line="412" selection-start-column="1" selection-end-line="412" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/utils/BaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandlerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/MessageHandlerPojo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/IMMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/WebsocketServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/OnlineCatHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/beans/SystemConst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86">
@@ -892,13 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/MessageCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/beans/ApiResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-340">
@@ -917,9 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,10 +780,270 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/entity/TalkLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/api/CatChatController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="95" column="55" selection-start-line="95" selection-start-column="55" selection-end-line="95" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/ApiFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandlerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/CatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/CatTalkApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/5.0.0.Alpha1/netty-all-5.0.0.Alpha1.jar!/io/netty/channel/ChannelHandlerInvokerUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/WebsocketServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/builder/Builder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/builder/SendContextBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageHandlerProtocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.22.RELEASE/spring-context-4.3.22.RELEASE.jar!/org/springframework/stereotype/Component.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/OnlineCatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/ErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="58" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/IMEnums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/enums/MessageCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/SendContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/SendState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/LoginState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="27" column="72" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="27" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/handler/ContextHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.18.RELEASE/spring-data-mongodb-1.10.18.RELEASE.jar!/org/springframework/data/mongodb/core/aggregation/Aggregation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.18.RELEASE/spring-data-mongodb-1.10.18.RELEASE.jar!/org/springframework/data/mongodb/core/MongoTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30411">
+          <caret line="1131" column="67" selection-start-line="1131" selection-start-column="67" selection-end-line="1131" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/strategy/impl/PreTalkCatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="961">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/ChatProtocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/socket/state/IMState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/IMMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/BaseIM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/protocol/MessageAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/pojo/resp/ChatResp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="29">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -970,8 +1052,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/TalkLogMao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="199">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -980,81 +1062,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/mongo/impl/TalkLogMaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        <state relative-caret-position="298">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/entity/TalkLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/CatTalkApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2945">
-          <caret line="95" column="55" selection-start-line="95" selection-start-column="55" selection-end-line="95" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/api/CatChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/commons/config/ApiFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cat/talk/core/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>

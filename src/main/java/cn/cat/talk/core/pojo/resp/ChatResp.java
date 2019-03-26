@@ -25,6 +25,8 @@ public class ChatResp implements Serializable {
     private String lastMessage;
     @ApiModelProperty(value = "最新消息发送时间", notes = "最新消息的发送时间")
     private String lastTime;
+    @ApiModelProperty(value = "本人发送为true，反之false", notes = "本人发送为true，反之false")
+    private Boolean self = Boolean.FALSE;
     @ApiModelProperty(value = "最新消息发送时间", notes = "最新消息的发送时间")
     private Long lastTimestamp;
 }

@@ -1,7 +1,6 @@
 package cn.cat.talk.core.strategy;
 
-import cn.cat.talk.core.pojo.MessageHandlerPojo;
-import cn.cat.talk.protocol.IMMessage;
+import cn.cat.talk.protocol.MessageHandlerProtocal;
 
 /**
  * @author wangzun
@@ -10,5 +9,5 @@ import cn.cat.talk.protocol.IMMessage;
  */
 public interface CatHandler {
 
-    void handler(MessageHandlerPojo msg);
+    void handler(MessageHandlerProtocal msg);
 }

@@ -8,15 +8,13 @@ import lombok.Data;
  * @desc
  */
 @Data
-public class IMMessage {
+public class IMMessage extends BaseIM {
     private Long[] accounts;
     private String password;
     private String body;
-    private int code;
-    private int type;
     private Long timestamp;
     public void buildResp(int code,String body) {
-        this.code = code;
+        setCode(code);
         this.body = body;
     }
 }

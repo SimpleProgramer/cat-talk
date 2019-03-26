@@ -2,10 +2,9 @@ package cn.cat.talk.socket.handler;
 
 import cn.cat.talk.commons.enums.ErrorCode;
 import cn.cat.talk.commons.exceptions.BusinessExceptionFactory;
-import cn.cat.talk.core.pojo.MessageHandlerPojo;
+import cn.cat.talk.protocol.MessageHandlerProtocal;
 import cn.cat.talk.core.strategy.CatHandlerContext;
 import cn.cat.talk.protocol.IMMessage;
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -108,10 +107,10 @@ public class WebsocketServerHandler extends SimpleChannelInboundHandler<Object> 
         IMMessage msgReq = null;
         try {
             msgReq = JSONObject.parseObject(((TextWebSocketFrame) msg).text(), IMMessage.class);
-            new CatHandlerContext(new MessageHandlerPojo(msgReq,ctx,handshaker)).strategy();
+            new CatHandlerContext(new MessageHandlerProtocal(msgReq,ctx,handshaker)).strategy();
         } catch (Exception e) {
 //            log.info("消息解析错误:[{}]   为了安全着想，该链路关闭",((TextWebSocketFrame) msg).text());
-            handshaker.close(ctx.channel(), ((CloseWebSocketFrame) msg).retain());
+            handshaker.close(ctx.channel(), new CloseWebSocketFrame());
             return;
         }
     }

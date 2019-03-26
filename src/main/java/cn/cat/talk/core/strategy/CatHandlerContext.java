@@ -1,8 +1,7 @@
 package cn.cat.talk.core.strategy;
 
 import cn.cat.talk.commons.context.SpringContextHolder;
-import cn.cat.talk.core.pojo.MessageHandlerPojo;
-import cn.cat.talk.protocol.IMMessage;
+import cn.cat.talk.protocol.MessageHandlerProtocal;
 
 /**
  * @author wangzun
@@ -12,9 +11,9 @@ import cn.cat.talk.protocol.IMMessage;
 public class CatHandlerContext {
     private CatHandler handler;
 
-    private MessageHandlerPojo msg;
+    private MessageHandlerProtocal msg;
 
-    public CatHandlerContext(MessageHandlerPojo msg) {
+    public CatHandlerContext(MessageHandlerProtocal msg) {
         this.msg = msg;
         if (null == msg) {
             return;
@@ -25,9 +24,12 @@ public class CatHandlerContext {
                 handler = SpringContextHolder.getBean("onlineCatHandler");
                 break;
             case 2://点对点
-                handler = SpringContextHolder.getBean("talkCatHandler");
+                handler = SpringContextHolder.getBean("preTalkCatHandler");
                 break;
-            case 3://加好友
+            case 3://发送消息
+                handler = SpringContextHolder.getBean("talkingCatHandler");
+                break;
+            case 4://加好友
                 handler = SpringContextHolder.getBean("friendshipCatHandler");
                 break;
             default:
