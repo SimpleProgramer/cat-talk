@@ -29,6 +29,22 @@ public class SendContext {
         return this;
     }
 
+    public SendContext buildState(SendState state) {
+        if (this.sendState != null) {
+            this.sendState = null;
+        }
+        this.sendState = state;
+        return this;
+    }
+
+    public SendContext buildMsg(MessageAdapter pojo) {
+        if (this.pojo != null) {
+            this.pojo = null;
+        }
+        this.pojo = pojo;
+        return this;
+    }
+
 
     public void request() {
         sendState.handler(this);

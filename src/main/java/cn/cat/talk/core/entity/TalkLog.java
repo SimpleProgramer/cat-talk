@@ -27,7 +27,7 @@ public class TalkLog implements Serializable {
     @Column(name="msg")
     private String msg;
     @Column(name="recall")
-    private Integer recall;
+    private Integer recall = 2;
     @Column(name="create_time")
     private Long createTime;
     @Column(name="update_time")

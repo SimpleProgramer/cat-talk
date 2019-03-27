@@ -10,8 +10,7 @@ import cn.cat.talk.protocol.MessageAdapter;
 import cn.cat.talk.protocol.MessageHandlerProtocal;
 import cn.cat.talk.core.strategy.CatHandler;
 import cn.cat.talk.socket.handler.ContextHandler;
-import cn.cat.talk.socket.state.IMState;
-import cn.cat.talk.socket.state.LoginState;
+import cn.cat.talk.socket.state.DefaultState;
 import cn.cat.talk.socket.state.SendContext;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,13 +35,14 @@ public class OnlineCatHandler implements CatHandler {
             return;
         }
         SendContext context = new SendContext(
-                new LoginState(),
+                new DefaultState(),
                 new MessageAdapter()
                         .ctx(msg.getCtx())
                         .handler(msg.getHandshaker())
                         .msg(msg.getMsg())).type(IMEnums.ONLINE.getType());
         if (OnlineCache.contains(msg.getMsg().getAccounts()[0])) {
             log.info("该用户已登陆");
+            OnlineCache.refresh(msg.getMsg().getAccounts()[0],msg.getCtx());
             msg.getMsg().buildResp(Integer.parseInt(ErrorCode.SUCCESS.getCode()),ErrorCode.SUCCESS.getMessage());
             context.request();
             return;

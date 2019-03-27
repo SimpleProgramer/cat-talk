@@ -4,8 +4,13 @@ import io.netty.channel.ChannelHandlerContext;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
 
 public final class OnlineCache {
+
+    static ReentrantLock lock = new ReentrantLock();
+    static Condition writeLock = lock.newCondition();
 
     private final static Map<Long, ChannelHandlerContext> caches = new ConcurrentHashMap<>();
 
@@ -32,4 +37,13 @@ public final class OnlineCache {
     }
 
 
+    public static void refresh(Long aLong, ChannelHandlerContext ctx) {
+        lock.lock();
+        try {
+            caches.remove(aLong);
+        }finally {
+            lock.unlock();
+        }
+        caches.put(aLong, ctx);
+    }
 }

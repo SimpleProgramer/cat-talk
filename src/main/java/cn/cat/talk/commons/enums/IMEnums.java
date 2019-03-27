@@ -7,7 +7,8 @@ package cn.cat.talk.commons.enums;
  */
 public enum  IMEnums {
     ONLINE(1),
-    STARTCHAT(2);
+    STARTCHAT(2),
+    CHATING(3);
     /**
      * 错误码code
      */

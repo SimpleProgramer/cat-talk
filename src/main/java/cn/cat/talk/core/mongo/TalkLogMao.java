@@ -18,4 +18,6 @@ public interface TalkLogMao {
     List<ChatResp> findChats(long account);
 
     List<ChatResp> findTalkHistory(IMMessage msg);
+
+    void addChatLog(IMMessage msg);
 }

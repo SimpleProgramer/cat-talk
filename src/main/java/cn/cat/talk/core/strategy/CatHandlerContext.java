@@ -32,6 +32,12 @@ public class CatHandlerContext {
             case 4://加好友
                 handler = SpringContextHolder.getBean("friendshipCatHandler");
                 break;
+            case 999://刷新socket
+                handler = SpringContextHolder.getBean("refreshCatHandler");
+                break;
+            case 666://保持心跳
+                handler = SpringContextHolder.getBean("heartBeatCatHandler");
+                break;
             default:
                 handler = SpringContextHolder.getBean("onlineCatHandler");
                 break;

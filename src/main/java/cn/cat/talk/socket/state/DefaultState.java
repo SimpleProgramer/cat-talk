@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @desc
  */
 @Service("loginState")
-public class LoginState implements SendState {
+public class DefaultState implements SendState {
     @Override
     public void handler(SendContext ctx) {
         if (1 != ctx.getType()) {

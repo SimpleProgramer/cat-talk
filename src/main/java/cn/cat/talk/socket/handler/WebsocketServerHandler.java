@@ -106,6 +106,7 @@ public class WebsocketServerHandler extends SimpleChannelInboundHandler<Object> 
         //收到消息 增加到消息记录
         IMMessage msgReq = null;
         try {
+
             msgReq = JSONObject.parseObject(((TextWebSocketFrame) msg).text(), IMMessage.class);
             new CatHandlerContext(new MessageHandlerProtocal(msgReq,ctx,handshaker)).strategy();
         } catch (Exception e) {

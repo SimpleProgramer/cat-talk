@@ -12,6 +12,7 @@ public class IMMessage extends BaseIM {
     private Long[] accounts;
     private String password;
     private String body;
+    private String timeStr;
     private Long timestamp;
     public void buildResp(int code,String body) {
         setCode(code);
