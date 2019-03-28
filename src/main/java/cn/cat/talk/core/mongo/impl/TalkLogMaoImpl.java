@@ -40,7 +40,7 @@ public class TalkLogMaoImpl implements TalkLogMao {
     @Override
     public List<ChatResp> findChats(long account) {
         Aggregation aggregation = Aggregation.newAggregation(
-                Aggregation.project("lastTimestamp","self", "fromUserAccount","headImg", "lastMessage","lastTime","name","toUserAccount"),
+                Aggregation.project("lastTimestamp","fromUserName","toUserName","fromUserHeadImg","toUserHeadImg","self", "fromUserAccount","headImg", "lastMessage","lastTime","name","toUserAccount"),
                 // 第二步：sql where 语句筛选符合条件的记录
                 Aggregation.match(new Criteria().orOperator(Criteria.where("fromUserAccount").is(account),Criteria.where("toUserAccount").is(account))),
                 // 第四部：排序（根据某字段排序 倒序）
