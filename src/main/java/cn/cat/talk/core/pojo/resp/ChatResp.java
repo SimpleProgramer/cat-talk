@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * @author wangzun
@@ -33,4 +34,20 @@ public class ChatResp implements Serializable {
     private Boolean self = Boolean.FALSE;
     @ApiModelProperty(value = "最新消息发送时间", notes = "最新消息的发送时间")
     private Long lastTimestamp;
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ChatResp chatResp = (ChatResp) o;
+        return (chatResp.getFromUserAccount() == this.getFromUserAccount() && chatResp.getToUserAccount() == this.getToUserAccount()) || (chatResp.getFromUserAccount() == this.getToUserAccount() && chatResp.getToUserAccount() == this.getFromUserAccount());
+    }
+
+    @Override
+    public int hashCode() {
+        long pre = getFromUserAccount() < getToUserAccount() ? getFromUserAccount() : getToUserAccount();
+        long next = getFromUserAccount() == pre ? getToUserAccount() : getFromUserAccount();
+        return Objects.hash(pre + ":" + next);
+    }
 }

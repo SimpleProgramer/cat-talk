@@ -28,6 +28,8 @@ public class UserServiceImpl implements UserService {
         }
         //从缓存中拉取聊天记录。
         List<ChatResp> chats = talkLogMao.findChats(account);
-        return chats.stream().sorted(Comparator.comparingLong(ChatResp::getLastTimestamp).reversed()).collect(Collectors.toList());
+        //将聊天记录分组，
+        //分组条件： 发送人1 = 发送人n  && 接收人1 = 接收人n   ||  发送人1 == 接收人n && 接收人1 == 发送人n
+        return  chats.stream().collect(Collectors.toSet()).stream().sorted(Comparator.comparingLong(ChatResp::getLastTimestamp).reversed()).collect(Collectors.toList());
     }
 }

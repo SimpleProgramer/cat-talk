@@ -39,16 +39,25 @@ public class TalkLogMaoImpl implements TalkLogMao {
 
     @Override
     public List<ChatResp> findChats(long account) {
-        Query query = new Query(Criteria.where("fromUserAccount").is(account));
-        return mongoTemplate.find(query, ChatResp.class,collections);
+        Aggregation aggregation = Aggregation.newAggregation(
+                Aggregation.project("lastTimestamp","self", "fromUserAccount","headImg", "lastMessage","lastTime","name","toUserAccount"),
+                // 第二步：sql where 语句筛选符合条件的记录
+                Aggregation.match(new Criteria().orOperator(Criteria.where("fromUserAccount").is(account),Criteria.where("toUserAccount").is(account))),
+                // 第四部：排序（根据某字段排序 倒序）
+                Aggregation.sort(Sort.Direction.DESC, "lastTimestamp")
+                // 第五步：数量(分页)
+//                Aggregation.limit(Integer.parseInt(map.get("pagesCount"))),
+        );
+        AggregationResults<ChatResp> aggregate = mongoTemplate.aggregate(aggregation, collections, ChatResp.class);
+        return aggregate.getMappedResults();
     }
 
     @Override
     public List<ChatResp> findTalkHistory(IMMessage msg) {
         Aggregation aggregation = Aggregation.newAggregation(
-                Aggregation.project("lastTimestamp","self", "fromUserAccount","headImg", "lastMessage","lastTime","name","toUserAccount"),
+                Aggregation.project("lastTimestamp","fromUserName","toUserName","fromUserHeadImg","toUserHeadImg","self", "fromUserAccount","headImg", "lastMessage","lastTime","name","toUserAccount"),
                 // 第二步：sql where 语句筛选符合条件的记录
-//                Aggregation.match(Criteria.where("fromUserAccount").is(msg.getAccounts()[0]).and("toUserAccount").is(msg.getAccounts()[1]).orOperator(Criteria.where("fromUserAccount").is(msg.getAccounts()[1]).and("toUserAccount").is(msg.getAccounts()[0]))),
+                Aggregation.match(new Criteria().orOperator(Criteria.where("fromUserAccount").is(msg.getAccounts()[0]).and("toUserAccount").is(msg.getAccounts()[1]),Criteria.where("fromUserAccount").is(msg.getAccounts()[1]).and("toUserAccount").is(msg.getAccounts()[0]))),
                 // 第四部：排序（根据某字段排序 倒序）
                 Aggregation.sort(Sort.Direction.ASC, "lastTimestamp")
                 // 第五步：数量(分页)
