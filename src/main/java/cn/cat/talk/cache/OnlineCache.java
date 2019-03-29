@@ -1,6 +1,8 @@
 package cn.cat.talk.cache;
 
+import cn.cat.talk.socket.handler.ContextHandler;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -40,10 +42,18 @@ public final class OnlineCache {
     public static void refresh(Long aLong, ChannelHandlerContext ctx) {
         lock.lock();
         try {
-            caches.remove(aLong);
+            if (ctx != null) {
+                ChannelHandlerContext oldCtx = get(aLong);
+                if (oldCtx != ctx) {
+                    oldCtx.channel().write(new CloseWebSocketFrame());
+                    oldCtx.flush();
+                    set(aLong,ctx);
+                }
+            }
         }finally {
             lock.unlock();
         }
-        caches.put(aLong, ctx);
+
+
     }
 }
